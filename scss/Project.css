@@ -18,9 +18,69 @@
 }
 .note-view .view-wrapper .view {
   width: 650px;
-  aspect-ratio: 2/1.5;
+  height: 450px;
   border: 1px solid #333;
   background-color: white;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.note-view .view-wrapper .view .view-header {
+  position: relative;
+}
+.note-view .view-wrapper .view .view-header .note {
+  width: 100%;
+  font-size: 22px;
+  text-align: center;
+  position: absolute;
+}
+.note-view .view-wrapper .view .view-header .cancel-icon {
+  width: 30px;
+  height: 30px;
+  right: 0;
+  position: absolute;
+  cursor: pointer;
+}
+.note-view .view-wrapper .view .thoi-han {
+  width: 500px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin: 0 auto;
+}
+.note-view .view-wrapper .view #textAreaInput {
+  display: none;
+}
+.note-view .view-wrapper .view #textAreaInput .text-area-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.note-view .view-wrapper .view #textAreaInput .text-area-wrapper .save-button-wrapper {
+  width: 388px;
+}
+.note-view .view-wrapper .view #textAreaInput .text-area-wrapper .save-button-wrapper .save-button {
+  width: 100%;
+  height: 30px;
+  background-color: white;
+}
+.note-view .view-wrapper .view .view-button {
+  width: 650px;
+  height: 147px;
+  display: block;
+}
+.note-view .view-wrapper .view .view-button .changeButton {
+  display: flex;
+  margin: 0 auto;
+  font-size: 18px;
+  width: 160px;
+  height: 50px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -30,6 +90,7 @@
   width: 650px;
   height: 200px;
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 .container .container:after {
@@ -52,8 +113,8 @@
   font-size: 16px;
   border: 1px solid #333;
 }
-.container .wrapper .addButton {
-  width: 50px;
+.container .wrapper .saveButton {
+  width: 60px;
   padding: 10px;
   float: left;
   text-align: center;
@@ -61,10 +122,10 @@
   cursor: pointer;
   transition: 0.4s;
   border-radius: 0;
-  background-color: #b2bec3;
+  background-color: white;
   color: #636e72;
 }
-.container .wrapper .addButton:hover {
+.container .wrapper .saveButton:hover {
   background-color: #7f8c8d;
 }
 .container .time {
@@ -177,6 +238,17 @@
 .container .time .day-month-year .day-month-year-3 .year-2 #year2 {
   width: 50px;
   height: 20px;
+}
+.container .time .day-month-year .get-button-wrapper {
+  width: 140px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .time .day-month-year .get-button-wrapper .get-button {
+  width: 50px;
+  height: 30px;
 }
 
 .wrapper-todo {

@@ -7,23 +7,53 @@
     <link rel="stylesheet" href="./scss/Project.css">
 </head>
 <body>
-    <button id="div31ID122">View</button>
+    
     <div class="note-view" id="popupModel">
         <div class="view-wrapper">
             <div class="view">
-                <h3>NOTE</h3>
-                <p>Do Homework</p>
+                <div class="view-header">
+                    <p class="note">NOTE <br><span id="view-header-title">Do Homework</span></p>
+                    <div class="cancel-icon" id="viewCancelIcon">
+                        <svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>cancel</title>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="work-case" fill="#000000" transform="translate(91.520000, 91.520000)">
+                                    <polygon id="Close" points="328.96 30.2933333 298.666667 1.42108547e-14 164.48 134.4 30.2933333 1.42108547e-14 1.42108547e-14 30.2933333 134.4 164.48 1.42108547e-14 298.666667 30.2933333 328.96 164.48 194.56 298.666667 328.96 328.96 298.666667 194.56 164.48">
+                        
+                        </polygon>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                
                 <br><br>
-                <p>Thời hạn làm bài đến thứ 2 tuần sau, thực hiện 1 cái todolist như design có sẵn</p>
+                <p class="thoi-han" id="viewContent">Thời hạn làm bài đến thứ 2 tuần sau, thực hiện 1 cái todolist như design có sẵn</p>
                 <br><br><br>
-                <p>Change the notes</p>
+                <div id="textAreaInput">   
+                    <div class="text-area-wrapper" >
+                        <textarea name="" id="contentInput" cols="50" rows="4" style="resize: none;" maxlength="200">Thời hạn làm bài đến thứ 2 tuần sau, thực hiện 1 cái todolist như design có sẵn và thực hiện đủ chức năng. Đây là một mini project.</textarea>
+                        
+                        <div class="save-button-wrapper">
+                            <button class="save-button" id="textAreaSaveButton">
+                                SAVE
+                            </button>
+                        </div>  
+                    </div>
+                </div>
+                <div class="text-view-button">
+
+                </div>
+                <div class="view-button">
+                    <button class="changeButton" id="noteChangeButton">Change the notes</button>
+                </div>
             </div>
         </div>   
     </div>
     <div class="container">
         <div class="wrapper">
             <input type="text" id="myAdd" placeholder="Fill here">
-            <button class="addButton" id="myAddButton">ADD</button>
+            <button class="saveButton" id="mySaveButton">SAVE</button>
         </div>
         <br>
         <div class="time">
@@ -68,6 +98,11 @@
                         <p>Year</p>
                         <input type="number" id="year2" min="1" max="2024">
                     </div>
+                </div>
+                <div class="get-button-wrapper">
+                    <button class="get-button" id="getDataButton">
+                       GET
+                    </button>
                 </div>
             </div>   
         </div>
